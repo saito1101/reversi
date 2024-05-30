@@ -97,15 +97,5 @@ def click(c):
     clk += 1
 canvas.bind("<Button>", click)
 
-                
-
-# def system():
-#     global proc, turn, clk, msg
-#     display()
-#     if clk%2 == 0:
-#         event(clky, clkx, white)
-#     else:
-#         event(clky, clkx, black)
-
 
 window.mainloop()
