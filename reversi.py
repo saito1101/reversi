@@ -7,16 +7,6 @@ outside = -1
 clkx = 0
 clky = 0
 clk = 1
-proc = 0
-turn = 0
-msg = ""
-color = [1, 2]
-who = ["黒", "白"]
-board = []
-back = []
-back2 = []
-cellx = []
-celly = []
 
 board = [
     [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
