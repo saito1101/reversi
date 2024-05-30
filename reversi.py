@@ -7,6 +7,7 @@ outside = -1
 clkx = 0
 clky = 0
 clk = 1
+size = 8
 
 board = [
     [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
@@ -29,11 +30,10 @@ window.title("reversi")
 canvas = tk.Canvas(window, width=804, height=804, bg="green")
 canvas.place(x=25, y=25)
 
-size = 8
 def display():
     for i in range(size+1):
-        x = 100*i+4
-        y = 100*i+4
+        x = 100*i +4
+        y = 100*i +4
         canvas.create_line(x, 4, x, 804, fill="black", width=2)
         canvas.create_line(4, y, 804, y, fill="black", width=2)
 display()
@@ -70,7 +70,7 @@ def event(r, c, color):
                         board[searchr][searchc] = color
 
 def click(c):
-    global clkx, clky, clk, turn, msg
+    global clkx, clky, clk
     clkx = int((c.x -25 +4)/100) +1
     clky = int((c.y -25 +4)/100) +1
     print(clkx)
