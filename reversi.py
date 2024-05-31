@@ -154,7 +154,6 @@ def click(c):
                 judge()
     if clk == 64:
         judge()
-    print(clk)
 canvas.bind("<Button>", click)
 
 window.mainloop()
