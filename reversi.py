@@ -68,6 +68,7 @@ def event(r, c, color):
                         searchr -= y
                         searchc -= x
                         board[searchr][searchc] = color
+                        break
 
 def click(c):
     global clkx, clky, clk
